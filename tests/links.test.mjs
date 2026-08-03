@@ -22,3 +22,9 @@ test('invitation shows the RSVP deadline', async () => {
 
   assert.match(html, /Confirmar antes del 22 de septiembre de 2026/);
 });
+
+test('invitation does not show a separate song suggestion button', async () => {
+  const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
+
+  assert.doesNotMatch(html, />\s*Sugerir canciones\s*</);
+});
