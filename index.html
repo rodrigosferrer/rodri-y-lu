@@ -30,6 +30,10 @@
           <p class="hero__note">
             Un encuentro intimo, relajado y sin protocolo.
           </p>
+          <div class="countdown" aria-label="Cuenta regresiva">
+            <span data-countdown-days>--</span>
+            <p>dias para compartir este almuerzo juntos</p>
+          </div>
           <button
             class="button button--primary"
             id="calendarButton"
@@ -41,7 +45,7 @@
         </div>
       </section>
 
-      <section class="section section--intro" aria-label="Resumen del dia">
+      <section class="section section--intro" aria-label="Resumen del dia" data-reveal>
         <p>
           Despues del civil nos vamos a almorzar a Chacras de la Villa.
           La idea es pasar la tarde juntos, tranquilos, con sobremesa y unos
@@ -49,7 +53,7 @@
         </p>
       </section>
 
-      <section class="section" aria-labelledby="cuando">
+      <section class="section" aria-labelledby="cuando" data-reveal>
         <div class="section__header">
           <p class="eyebrow">Cuando</p>
           <h2 id="cuando">Viernes 2/10</h2>
@@ -93,7 +97,7 @@
         </div>
       </section>
 
-      <section class="section" aria-labelledby="lugares">
+      <section class="section" aria-labelledby="lugares" data-reveal>
         <div class="section__header">
           <p class="eyebrow">Donde</p>
           <h2 id="lugares">Civil y festejo</h2>
@@ -126,7 +130,7 @@
         </div>
       </section>
 
-      <section class="section details" aria-labelledby="detalles">
+      <section class="section details" aria-labelledby="detalles" data-reveal>
         <div class="section__header">
           <p class="eyebrow">Detalles</p>
           <h2 id="detalles">Sin protocolo</h2>
@@ -147,7 +151,7 @@
         </div>
       </section>
 
-      <section class="section actions" aria-label="Acciones principales">
+      <section class="section actions" aria-label="Acciones principales" data-reveal>
         <a
           class="button button--primary"
           href="https://docs.google.com/forms/d/e/1FAIpQLSd9v9ZdfLHnsJlfOEsQNqAsKjIE3yErO4AVZEZRMTmeijRGEQ/viewform?usp=publish-editor"
@@ -178,5 +182,13 @@
     <footer>
       <p>Los esperamos para compartir un dia muy nuestro.</p>
     </footer>
+    <a
+      class="floating-rsvp"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSd9v9ZdfLHnsJlfOEsQNqAsKjIE3yErO4AVZEZRMTmeijRGEQ/viewform?usp=publish-editor"
+      target="_blank"
+      rel="noreferrer"
+    >
+      Confirmar asistencia
+    </a>
   </body>
 </html>

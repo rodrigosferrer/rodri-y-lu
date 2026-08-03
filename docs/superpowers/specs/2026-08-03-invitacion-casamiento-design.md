@@ -32,6 +32,7 @@ La pagina debe incluir:
 - Bloque breve de vestimenta: sin codigo, informal, "como quieras".
 - Texto breve de tono relajado, por ejemplo: "Venite comodo, con ganas de compartir. Nada de protocolo."
 - Cronograma informal: civil, almuerzo, tarde juntos, merienda con mates y cierre.
+- Dinamismo suave: contador hasta la fecha, entradas progresivas al scrollear, microinteracciones en botones y boton flotante discreto para confirmar asistencia en mobile.
 
 ## Estilo visual
 
@@ -113,11 +114,22 @@ La prioridad es mobile. En pantallas chicas:
 - La foto debe recortarse de forma cuidada.
 - Los textos no deben superponerse.
 - Los botones deben ocupar ancho comodo.
+- Debe aparecer una accion flotante discreta para confirmar asistencia sin tapar contenido importante.
 
 En desktop:
 
 - La pagina debe mantenerse centrada y contenida.
 - La foto puede convivir con el texto en una composicion mas amplia si mejora la lectura.
+
+## Movimiento e interaccion
+
+La web debe sentirse mas dinamica sin perder el tono intimo. El movimiento sera sutil:
+
+- Contador visible con dias restantes hasta el 2 de octubre de 2026.
+- Secciones que entran suavemente al scrollear.
+- Botones con transiciones de hover/tap.
+- Timeline con puntos y linea visual.
+- Respetar `prefers-reduced-motion: reduce` desactivando animaciones no esenciales.
 
 ## Verificacion
 
