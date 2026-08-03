@@ -28,6 +28,7 @@ La pagina debe incluir:
   - Abrir Chacras de la Villa en Google Maps.
 - Boton para confirmar asistencia en Google Forms.
 - Boton para subir fotos a Google Drive.
+- Bloque breve de vestimenta: sin codigo, informal, "como quieras".
 - Texto breve de tono relajado, por ejemplo: "Venite comodo, con ganas de compartir. Nada de protocolo."
 
 ## Estilo visual
@@ -42,6 +43,12 @@ El estilo sera campestre minimalista e informal:
 - Layout vertical, sin navegacion compleja.
 
 La pagina no debe sentirse formal ni ceremonial. Debe sentirse cercana, simple y familiar.
+
+## Vestimenta
+
+La invitacion debe comunicar que no hay codigo de vestimenta. El texto sera informal y claro, por ejemplo:
+
+"Sin codigo de vestimenta. Venite como quieras, comodo/a y con ganas de compartir."
 
 ## Arquitectura
 
@@ -99,4 +106,3 @@ Antes de dar por terminado:
 - Confirmar que no haya texto superpuesto.
 - Probar que el `.ics` se descarga.
 - Verificar que los botones externos apunten a Maps, Forms y Drive.
-
