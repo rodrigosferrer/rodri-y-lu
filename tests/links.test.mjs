@@ -16,3 +16,9 @@ test('celebration maps link uses the exact Chacras de la Villa URL', async () =>
 
   assert.match(html, /href="https:\/\/maps\.app\.goo\.gl\/roh1Jn7AiqDTMNXW6"/);
 });
+
+test('invitation shows the RSVP deadline', async () => {
+  const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
+
+  assert.match(html, /Confirmar antes del 22 de septiembre de 2026/);
+});

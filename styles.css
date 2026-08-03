@@ -308,6 +308,20 @@ h3 {
   padding-bottom: 20px;
 }
 
+.action-with-note {
+  display: grid;
+  gap: 8px;
+}
+
+.deadline-note {
+  margin: 0;
+  color: var(--clay);
+  font-family: Arial, sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-align: center;
+}
+
 footer {
   width: min(100%, 1120px);
   margin: 0 auto;
@@ -389,7 +403,7 @@ footer p {
   }
 
   .detail-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .actions {

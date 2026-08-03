@@ -12,6 +12,7 @@ Crear una web estatica de una sola pagina para invitar a un casamiento intimo de
 - Civil: CPC Centro America, Cordoba Capital. Coordenadas: -31.373877, -64.175724.
 - Festejo: Chacras de la Villa, Cordoba/Villa Allende. Maps: https://maps.app.goo.gl/roh1Jn7AiqDTMNXW6
 - Confirmacion de asistencia: https://docs.google.com/forms/d/e/1FAIpQLSd9v9ZdfLHnsJlfOEsQNqAsKjIE3yErO4AVZEZRMTmeijRGEQ/viewform?usp=publish-editor
+- Fecha limite para confirmar asistencia: 22 de septiembre de 2026.
 - Subida de fotos: https://drive.google.com/drive/folders/1p0uRSj1Km4AF0QkchjCwYqbOYrl7e0Zj?usp=drive_link
 - Foto principal: `20251215_083449.jpg`.
 
@@ -27,6 +28,7 @@ La pagina debe incluir:
   - Abrir CPC Centro America en Google Maps.
   - Abrir Chacras de la Villa en Google Maps.
 - Boton para confirmar asistencia en Google Forms.
+- Texto visible de limite de confirmacion: confirmar antes del 22 de septiembre de 2026.
 - Bloque de musica: explicar que en el mismo formulario se pueden sugerir canciones para la playlist.
 - Boton para subir fotos a Google Drive.
 - Bloque breve de vestimenta: sin codigo, informal, "como quieras".
