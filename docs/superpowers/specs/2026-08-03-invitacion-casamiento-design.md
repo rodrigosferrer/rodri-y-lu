@@ -9,7 +9,7 @@ Crear una web estatica de una sola pagina para invitar a un casamiento intimo de
 - Pareja: Rodri y Lu.
 - Fecha: 2 de octubre de 2026.
 - Horario: de 12:00 a 20:00.
-- Civil: CPC Centro America, Cordoba Capital.
+- Civil: CPC Centro America, Cordoba Capital. Coordenadas: -31.373877, -64.175724.
 - Festejo: Chacras de la Villa, Cordoba/Villa Allende.
 - Confirmacion de asistencia: https://docs.google.com/forms/d/e/1FAIpQLSd9v9ZdfLHnsJlfOEsQNqAsKjIE3yErO4AVZEZRMTmeijRGEQ/viewform?usp=publish-editor
 - Subida de fotos: https://drive.google.com/drive/folders/1p0uRSj1Km4AF0QkchjCwYqbOYrl7e0Zj?usp=drive_link
@@ -97,9 +97,9 @@ Al tocar "Guardar en calendario", JavaScript generara un archivo `.ics` con:
 
 ### Abrir mapas
 
-Los botones de ubicacion abriran Google Maps con busqueda por nombre y ciudad:
+Los botones de ubicacion abriran Google Maps:
 
-- `CPC Centro America Cordoba Capital`
+- Civil con coordenadas exactas: `-31.373877, -64.175724`
 - `Chacras de la Villa Cordoba Villa Allende`
 
 ### Confirmar asistencia y subir fotos
