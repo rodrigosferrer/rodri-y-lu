@@ -27,9 +27,11 @@ La pagina debe incluir:
   - Abrir CPC Centro America en Google Maps.
   - Abrir Chacras de la Villa en Google Maps.
 - Boton para confirmar asistencia en Google Forms.
+- Bloque de musica: explicar que en el mismo formulario se pueden sugerir canciones para la playlist.
 - Boton para subir fotos a Google Drive.
 - Bloque breve de vestimenta: sin codigo, informal, "como quieras".
 - Texto breve de tono relajado, por ejemplo: "Venite comodo, con ganas de compartir. Nada de protocolo."
+- Cronograma informal: civil, almuerzo, tarde juntos, merienda con mates y cierre.
 
 ## Estilo visual
 
@@ -49,6 +51,26 @@ La pagina no debe sentirse formal ni ceremonial. Debe sentirse cercana, simple y
 La invitacion debe comunicar que no hay codigo de vestimenta. El texto sera informal y claro, por ejemplo:
 
 "Sin codigo de vestimenta. Venite como quieras, comodo/a y con ganas de compartir."
+
+## Ritmo del dia
+
+La invitacion debe explicar que despues del civil habra un almuerzo en Chacras de la Villa. La idea del festejo no es una fiesta con protocolo, sino pasar la tarde juntos, compartir sobremesa y tomar unos mates a la merienda.
+
+Cronograma sugerido:
+
+- 12:00: Civil.
+- Despues: Almuerzo en Chacras de la Villa.
+- Tarde: Sobremesa y tiempo juntos.
+- Merienda: Mates.
+- 20:00: Cierre.
+
+## Musica
+
+La playlist se armara con sugerencias de los invitados. La web debe usar el mismo Google Form de confirmacion de asistencia para pedir canciones, evitando un segundo formulario o un enlace colaborativo de Spotify que pueda vencer.
+
+Texto sugerido:
+
+"La playlist la armamos entre todos. En el formulario tambien podes dejarnos canciones para sumar al festejo."
 
 ## Arquitectura
 
