@@ -60,7 +60,7 @@ test('pages expose the wedding favicon', async () => {
   const favicon = await readFile(new URL('../favicon.svg', import.meta.url), 'utf8');
 
   const faviconLink =
-    /<link rel="icon" type="image\/svg\+xml" href="favicon\.svg">/;
+    /<link rel="icon" type="image\/svg\+xml" href="favicon\.svg\?v=2">/;
 
   assert.match(indexHtml, faviconLink);
   assert.match(fontsHtml, faviconLink);
