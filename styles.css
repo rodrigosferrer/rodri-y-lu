@@ -8,8 +8,8 @@
   --clay: #b77952;
   --line: #e8dfcf;
   --shadow: 0 18px 40px rgba(70, 85, 51, 0.14);
-  --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-  --font-ui: 'Inter', Arial, sans-serif;
+  --font-display: 'Quicksand', Arial, sans-serif;
+  --font-ui: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
 }
 
 * {
@@ -87,7 +87,7 @@ h1 {
   margin-bottom: 0;
   font-family: var(--font-display);
   font-size: clamp(3.6rem, 17vw, 7.4rem);
-  font-weight: 500;
+  font-weight: 600;
   line-height: 0.92;
 }
 
@@ -95,7 +95,7 @@ h2 {
   margin-bottom: 0;
   font-family: var(--font-display);
   font-size: clamp(2rem, 8vw, 3.4rem);
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1;
 }
 
