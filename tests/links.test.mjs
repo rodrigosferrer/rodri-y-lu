@@ -28,3 +28,10 @@ test('invitation does not show a separate song suggestion button', async () => {
 
   assert.doesNotMatch(html, />\s*Sugerir canciones\s*</);
 });
+
+test('invitation loads the trial Google fonts', async () => {
+  const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
+
+  assert.match(html, /family=Cormorant\+Garamond/);
+  assert.match(html, /family=Inter/);
+});
