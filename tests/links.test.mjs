@@ -53,3 +53,17 @@ test('font comparison page includes all trial combinations', async () => {
     assert.match(html, new RegExp(label.replace(/[+]/g, '\\+')));
   }
 });
+
+test('pages expose the wedding favicon', async () => {
+  const indexHtml = await readFile(new URL('../index.html', import.meta.url), 'utf8');
+  const fontsHtml = await readFile(new URL('../fuentes.html', import.meta.url), 'utf8');
+  const favicon = await readFile(new URL('../favicon.svg', import.meta.url), 'utf8');
+
+  const faviconLink =
+    /<link rel="icon" type="image\/svg\+xml" href="favicon\.svg">/;
+
+  assert.match(indexHtml, faviconLink);
+  assert.match(fontsHtml, faviconLink);
+  assert.match(favicon, /<svg[^>]*viewBox="0 0 64 64"/);
+  assert.match(favicon, />R\+L</);
+});
