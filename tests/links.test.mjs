@@ -19,8 +19,11 @@ test('celebration maps link uses the exact Chacras de la Villa URL', async () =>
 
 test('invitation shows the RSVP deadline', async () => {
   const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
+  const occurrences =
+    html.match(/Confirmar antes del 22 de septiembre de 2026/g) ?? [];
 
   assert.match(html, /Confirmar antes del 22 de septiembre de 2026/);
+  assert.equal(occurrences.length, 1);
 });
 
 test('invitation does not show a separate song suggestion button', async () => {
