@@ -1,0 +1,198 @@
+:root {
+  --bg: #fbf7ef;
+  --paper: #fffdf8;
+  --ink: #2c2b25;
+  --muted: #686456;
+  --sage: #465533;
+  --clay: #b77952;
+  --line: #e8dfcf;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Inter, Arial, sans-serif;
+}
+
+.page {
+  width: min(100%, 1240px);
+  margin: 0 auto;
+  padding: 22px;
+}
+
+.page__header {
+  display: grid;
+  gap: 18px;
+  padding: 10px 0 28px;
+}
+
+.page__header a {
+  width: fit-content;
+  color: var(--sage);
+  font-size: 0.94rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.page__header p,
+.page__header span {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.page__header h1 {
+  margin: 0;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(3.2rem, 12vw, 6.2rem);
+  font-weight: 500;
+  line-height: 0.95;
+}
+
+.font-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.sample {
+  display: grid;
+  gap: 10px;
+}
+
+.sample__label {
+  margin: 0;
+  color: var(--sage);
+  font-family: Inter, Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.sample__card {
+  display: grid;
+  gap: 14px;
+  min-height: 100%;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.sample__date,
+.sample__text,
+.sample__details,
+.sample button {
+  font-family: var(--body-font);
+}
+
+.sample__date {
+  margin: 0;
+  color: var(--sage);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.sample h2 {
+  margin: 0;
+  font-family: var(--display-font);
+  font-size: clamp(3rem, 12vw, 5rem);
+  font-weight: var(--display-weight);
+  line-height: 0.92;
+}
+
+.sample__lead {
+  margin: 0;
+  color: var(--sage);
+  font-family: var(--display-font);
+  font-size: clamp(1.45rem, 6vw, 2rem);
+  font-weight: var(--lead-weight);
+  line-height: 1.12;
+}
+
+.sample__text {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.sample__details {
+  display: grid;
+  gap: 8px;
+  color: var(--clay);
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.sample button {
+  min-height: 46px;
+  border: 1px solid var(--sage);
+  border-radius: 6px;
+  background: var(--sage);
+  color: var(--paper);
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.sample--cormorant-inter {
+  --display-font: 'Cormorant Garamond', Georgia, serif;
+  --body-font: Inter, Arial, sans-serif;
+  --display-weight: 500;
+  --lead-weight: 500;
+}
+
+.sample--fraunces-nunito {
+  --display-font: Fraunces, Georgia, serif;
+  --body-font: 'Nunito Sans', Arial, sans-serif;
+  --display-weight: 600;
+  --lead-weight: 400;
+}
+
+.sample--lora-source {
+  --display-font: Lora, Georgia, serif;
+  --body-font: 'Source Sans 3', Arial, sans-serif;
+  --display-weight: 500;
+  --lead-weight: 400;
+}
+
+.sample--baskerville-work {
+  --display-font: 'Libre Baskerville', Georgia, serif;
+  --body-font: 'Work Sans', Arial, sans-serif;
+  --display-weight: 400;
+  --lead-weight: 400;
+}
+
+.sample--playfair-dm {
+  --display-font: 'Playfair Display', Georgia, serif;
+  --body-font: 'DM Sans', Arial, sans-serif;
+  --display-weight: 600;
+  --lead-weight: 400;
+}
+
+.sample--quicksand-cormorant {
+  --display-font: Quicksand, Arial, sans-serif;
+  --body-font: 'Cormorant Garamond', Georgia, serif;
+  --display-weight: 600;
+  --lead-weight: 600;
+}
+
+@media (min-width: 760px) {
+  .page {
+    padding: 34px;
+  }
+
+  .font-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1120px) {
+  .font-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

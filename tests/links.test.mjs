@@ -35,3 +35,18 @@ test('invitation loads the trial Google fonts', async () => {
   assert.match(html, /family=Cormorant\+Garamond/);
   assert.match(html, /family=Inter/);
 });
+
+test('font comparison page includes all trial combinations', async () => {
+  const html = await readFile(new URL('../fuentes.html', import.meta.url), 'utf8');
+
+  for (const label of [
+    'Cormorant Garamond + Inter',
+    'Fraunces + Nunito Sans',
+    'Lora + Source Sans 3',
+    'Libre Baskerville + Work Sans',
+    'Playfair Display + DM Sans',
+    'Quicksand + Cormorant Garamond',
+  ]) {
+    assert.match(html, new RegExp(label.replace(/[+]/g, '\\+')));
+  }
+});
