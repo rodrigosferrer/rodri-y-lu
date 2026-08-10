@@ -67,3 +67,16 @@ test('pages expose the wedding favicon', async () => {
   assert.match(favicon, /<svg[^>]*viewBox="0 0 64 64"/);
   assert.match(favicon, />R\+L</);
 });
+
+test('hero uses the handwritten title image accessibly', async () => {
+  const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
+  const titleImage = await readFile(
+    new URL('../rodri-lu-titulo.jpeg', import.meta.url)
+  );
+
+  assert.match(html, /<h1 id="titulo" class="hero__title">/);
+  assert.match(html, /src="rodri-lu-titulo\.jpeg"/);
+  assert.match(html, /alt="Rodri y Lu"/);
+  assert.match(html, /<span class="visually-hidden">Rodri y Lu<\/span>/);
+  assert.ok(titleImage.byteLength > 0);
+});

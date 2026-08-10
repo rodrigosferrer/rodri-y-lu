@@ -91,6 +91,29 @@ h1 {
   line-height: 0.92;
 }
 
+.hero__title {
+  width: min(100%, 520px);
+  line-height: 1;
+}
+
+.hero__signature {
+  display: block;
+  width: 100%;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 h2 {
   margin-bottom: 0;
   font-family: var(--font-display);
