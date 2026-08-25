@@ -70,7 +70,7 @@ main {
   margin: 0;
   color: var(--sage-dark);
   font-family: var(--font-ui);
-  font-size: 0.78rem;
+  font-size: 0.86rem;
   font-weight: 700;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -260,8 +260,7 @@ h3 {
 
 .timeline,
 .places,
-.detail-grid,
-.actions {
+.detail-grid {
   display: grid;
   gap: 12px;
 }
@@ -339,7 +338,7 @@ h3 {
   margin-top: 12px;
 }
 
-.actions {
+.details {
   padding-bottom: 20px;
 }
 
@@ -425,15 +424,6 @@ footer p {
 
   .detail-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .actions {
-    justify-items: start;
-  }
-
-  .actions .button {
-    width: fit-content;
-    min-width: 230px;
   }
 
   .floating-rsvp {
